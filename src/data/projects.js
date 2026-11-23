@@ -18,8 +18,9 @@ export const filterTags = [
   'Full-Stack',
   'Frontend',
   'Backend',
-  'Machine Learning',
-  'Computer Vision',
+  'web security',
+  // 'Machine Learning',
+  // 'Computer Vision',
 ]
 
 export const projects = [

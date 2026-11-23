@@ -1,10 +1,5 @@
-// =====================================================================
-//  Central profile data. Edit this file to update the whole site.
-// =====================================================================
 
 const WHATSAPP_NUMBER_LOCAL = '01874118508'
-// WhatsApp links need the international format without "+" or leading 0.
-// Bangladesh country code = 880, so 01874118508 -> 8801874118508
 const WHATSAPP_NUMBER_INTL = '88' + WHATSAPP_NUMBER_LOCAL
 
 export const profile = {
@@ -70,13 +65,13 @@ export const education = [
   {
     degree: 'Higher Secondary Certificate (HSC)',
     institution: 'Madan Mohan College',
-    meta: 'GPA 3.83',
+    meta: 'GPA 4.83',
     period: '2020',
   },
   {
     degree: 'Secondary School Certificate (SSC)',
     institution: 'Adarsha High School',
-    meta: 'GPA 3.72',
+    meta: 'GPA 4.72',
     period: '2018',
   },
 ]
@@ -95,12 +90,12 @@ export const experience = [
     description:
       'Worked with Node.js and Express.js to develop backend functionality, REST APIs, database-driven features and application logic. Explored backend architecture, data handling and integration between frontend and backend systems through practical projects.',
   },
-  {
-    title: 'Computer Vision & Machine Learning',
-    organization: 'Academic and Project-Based Work',
-    description:
-      'Explored machine learning and computer vision through academic and practical projects, including model implementation, object detection, image/video processing and computer vision-based problem solving.',
-  },
+  // {
+  //   title: 'Computer Vision & Machine Learning',
+  //   organization: 'Academic and Project-Based Work',
+  //   description:
+  //     'Explored machine learning and computer vision through academic and practical projects, including model implementation, object detection, image/video processing and computer vision-based problem solving.',
+  // },
   {
     title: 'Web Security Enthusiast',
     organization: 'Self-Learning & Security Exploration',
