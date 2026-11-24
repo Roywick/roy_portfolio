@@ -78,3 +78,10 @@ Fill `VITE_EMAILJS_SERVICE_ID`, `VITE_EMAILJS_TEMPLATE_ID` and `VITE_EMAILJS_PUB
 ## Deploy
 
 Vercel / Netlify: build command `npm run build`, output directory `dist`, and add the three `VITE_EMAILJS_*` variables.
+
+## Deploy (Vercel + Render + Neon)
+
+1. **Database:** create a free PostgreSQL project on Neon (or Supabase) and copy the connection string.
+2. **Backend:** push the project to GitHub, then in Render choose *New > Blueprint* (it reads `render.yaml`), or create a Web Service with root directory `server`, build `npm install`, start `npm start`. Set `DATABASE_URL`, `DATABASE_SSL=true`, `JWT_SECRET`, `CORS_ORIGIN` (your Vercel URL), `ADMIN_EMAIL`, `ADMIN_PASSWORD`. Then run `npm run db:init` and `npm run db:seed` once from Render's Shell tab.
+3. **Frontend:** import the repo into Vercel and set `VITE_API_URL=https://YOUR-API.onrender.com/api`. `vercel.json` makes `/admin` work on refresh.
+4. Edit everything at `https://YOUR-SITE.vercel.app/admin`. Changes are stored in the online database and show on the live site immediately. Redeploying code never erases them.
