@@ -9,9 +9,9 @@ const WHATSAPP_NUMBER_INTL = '88' + WHATSAPP_NUMBER_LOCAL
 
 export const profile = {
   // Display name. Replace with your full name when you want to.
-  name: 'Roywick',
-  // Short brand shown in the navbar, loading screen and footer ("Roywick.dev")
-  brand: 'Roywick',
+  name: 'Rayywick',
+  // Short brand shown in the navbar, loading screen and footer ("Rayywick.dev")
+  brand: 'Raywick',
 
   // Typing animation in the hero
   roles: [
