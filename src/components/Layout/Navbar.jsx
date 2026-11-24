@@ -44,7 +44,7 @@ export default function Navbar() {
           className="font-display text-lg sm:text-xl font-semibold tracking-tight"
           data-cursor-hover
         >
-          {profile.brand}<span className="text-signal">.</span>dev
+          {profile.brand}<span className="text-signal">.</span>
         </button>
 
         <ul className="hidden lg:flex items-center gap-1 font-mono text-xs">

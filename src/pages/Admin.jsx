@@ -24,7 +24,7 @@ function Login({ onLogin }) {
     setBusy(true)
     setError('')
     try {
-      const { token } = await api('/auth/login', { method: 'POST', body: form })
+      const { token } = await api('/api/auth/login', { method: 'POST', body: form })
       setToken(token)
       onLogin()
     } catch (err) {
